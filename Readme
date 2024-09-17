@@ -1,7 +1,7 @@
 This project implements a backend system for a sleep assessment app, using Node.js and MongoDB. The API allows users submit assessment data and get back the response including sleep score. It also stores and manages assessment data and assessment results.
 
 
-Project Overview
+Project Overview:
 The Sleep Assessment Backend API is designed to support the functionality of a sleep assessment app. Users can take sleep assessments, and view their results. All data is stored in MongoDB, and REST APIs are provided to interact with the backend system.
 
 
@@ -28,6 +28,6 @@ API Endpoint:
     }
 
 
-Database Schema
+Database Schema:
 1.  Assessments Collection
     Stores sleep assessments, including questions, answers, and results.
