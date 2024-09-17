@@ -1,0 +1,33 @@
+This project implements a backend system for a sleep assessment app, using Node.js and MongoDB. The API allows users submit assessment data and get back the response including sleep score. It also stores and manages assessment data and assessment results.
+
+
+Project Overview
+The Sleep Assessment Backend API is designed to support the functionality of a sleep assessment app. Users can take sleep assessments, and view their results. All data is stored in MongoDB, and REST APIs are provided to interact with the backend system.
+
+
+Technologies Used:
+1. Node.js: Backend framework for building the API.
+2. Express.js: Web framework for Node.js, used to handle routing and middleware.
+3. MongoDB: NoSQL database to store assessment data.
+4. Mongoose: ODM (Object Data Modeling) library for MongoDB, to interact with the database.
+
+
+API Endpoint:
+1.  Submit Sleep Assessment
+    Endpoint: /assessment
+    Method: POST
+    Description: Submits the user's sleep assessment answers.
+    Request Body:
+    {
+        "nickname" : "harsh",
+        "change" : "I will sleep through night", 
+        "sleepStruggleTime" : "2 to 8 weeks",
+        "sleepTime" : "11:00 P.M.", 
+        "wakeUpTime" :"08:00 A.M.",
+        "sleepHours" : "8 Hrs"
+    }
+
+
+Database Schema
+1.  Assessments Collection
+    Stores sleep assessments, including questions, answers, and results.
